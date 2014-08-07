@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		591E7179199325340023560D /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 591E7178199325340023560D /* OverlayView.m */; };
 		7B4968D11993231500F14183 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4968D01993231500F14183 /* OverlayViewController.m */; };
 		7B4968D419932AC800F14183 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4968D319932AC800F14183 /* OverlayView.m */; };
 		7B91CD2C1993179B0005CAEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2B1993179B0005CAEB /* Foundation.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		591E7177199325340023560D /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		591E7178199325340023560D /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		7B4968CF1993231500F14183 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
 		7B4968D01993231500F14183 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
 		7B4968D219932AC800F14183 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };

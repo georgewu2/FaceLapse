@@ -11,6 +11,8 @@
 
 @interface OverlayViewController ()
 
+@property (strong, nonatomic) UIImageView *imageView;
+
 @end
 
 @implementation OverlayViewController
@@ -33,6 +35,44 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    OverlayView* overlay = [[OverlayView alloc] initWithFrame:camera.view.frame];
+    overlay.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"yourimagename.png"]];
+    [overlay.layer setOpaque:NO];
+    overlay.opaque = NO;
+    
+    camera.CameraControls = NO;
+    camera.cameraOverlayView = overlayView;
+    
+    if((UIButton *) sender == choosePhotoBtn)
+    {
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+        {
+            [picker setSourceType:UIImagePickerControllerSourceTypeCamera];
+        } else {
+            //do something if the device has no camera or if the camera is disabled in settings (it cannot be assumed that the camera is available/not broken)
+        }
+    } else {
+        
+    }
+    
+    label1.text =@"PHOTO ACTION";
+    
+    [self presentModalViewController:picker animated:YES];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    self.imageView.image = chosenImage;
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+
+    UIImageWriteToSavedPhotosAlbum(chosenImage, nil, nil, nil);
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning

@@ -31,7 +31,6 @@
         UIImage *image = [self _getFirstImageInPhotoLibrary];
         _overlayImageView.image = image;
         [self addSubview:_overlayImageView];
-        
     }
     return self;
 }
