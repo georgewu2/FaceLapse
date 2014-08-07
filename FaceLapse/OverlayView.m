@@ -38,7 +38,7 @@
 
 - (void)layoutSubviews
 {
-
+    _photoLibraryButton.frame = CGRectMake(30, 508, 30, 30);
 }
 
 #pragma mark - 
