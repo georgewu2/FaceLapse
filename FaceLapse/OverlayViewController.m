@@ -7,6 +7,7 @@
 //
 
 #import "OverlayViewController.h"
+#import "OverlayView.h"
 
 @interface OverlayViewController ()
 
@@ -21,6 +22,11 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)loadView
+{
+    
 }
 
 - (void)viewDidLoad

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B4968D11993231500F14183 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4968D01993231500F14183 /* OverlayViewController.m */; };
+		7B4968D419932AC800F14183 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4968D319932AC800F14183 /* OverlayView.m */; };
 		7B91CD2C1993179B0005CAEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2B1993179B0005CAEB /* Foundation.framework */; };
 		7B91CD2E1993179B0005CAEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2D1993179B0005CAEB /* CoreGraphics.framework */; };
 		7B91CD301993179B0005CAEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2F1993179B0005CAEB /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		7B4968CF1993231500F14183 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
 		7B4968D01993231500F14183 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
+		7B4968D219932AC800F14183 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		7B4968D319932AC800F14183 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		7B91CD281993179B0005CAEB /* FaceLapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceLapse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B91CD2B1993179B0005CAEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B91CD2D1993179B0005CAEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,6 +117,8 @@
 				7B91CD3B1993179B0005CAEB /* AppDelegate.m */,
 				7B4968CF1993231500F14183 /* OverlayViewController.h */,
 				7B4968D01993231500F14183 /* OverlayViewController.m */,
+				7B4968D219932AC800F14183 /* OverlayView.h */,
+				7B4968D319932AC800F14183 /* OverlayView.m */,
 				7B91CD3D1993179B0005CAEB /* Images.xcassets */,
 				7B91CD321993179B0005CAEB /* Supporting Files */,
 			);
@@ -248,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B91CD3C1993179B0005CAEB /* AppDelegate.m in Sources */,
+				7B4968D419932AC800F14183 /* OverlayView.m in Sources */,
 				7B4968D11993231500F14183 /* OverlayViewController.m in Sources */,
 				7B91CD381993179B0005CAEB /* main.m in Sources */,
 			);

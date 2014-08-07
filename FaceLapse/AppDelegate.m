@@ -29,6 +29,8 @@
     _overlayController = [[OverlayViewController alloc] initWithNibName:nil bundle:nil];
     _pickerController.cameraOverlayView = _overlayController.view;
     _pickerController.delegate = _overlayController;
+    _pickerController.showsCameraControls = NO;
+
     self.window.rootViewController = _pickerController;
     
     return YES;
