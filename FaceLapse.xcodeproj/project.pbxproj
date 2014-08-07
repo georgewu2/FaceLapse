@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B91CD2C1993179B0005CAEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2B1993179B0005CAEB /* Foundation.framework */; };
+		7B91CD2E1993179B0005CAEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2D1993179B0005CAEB /* CoreGraphics.framework */; };
+		7B91CD301993179B0005CAEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2F1993179B0005CAEB /* UIKit.framework */; };
+		7B91CD361993179B0005CAEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B91CD341993179B0005CAEB /* InfoPlist.strings */; };
+		7B91CD381993179B0005CAEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B91CD371993179B0005CAEB /* main.m */; };
+		7B91CD3C1993179B0005CAEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B91CD3B1993179B0005CAEB /* AppDelegate.m */; };
+		7B91CD3E1993179B0005CAEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B91CD3D1993179B0005CAEB /* Images.xcassets */; };
+		7B91CD451993179B0005CAEB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD441993179B0005CAEB /* XCTest.framework */; };
+		7B91CD461993179B0005CAEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2B1993179B0005CAEB /* Foundation.framework */; };
+		7B91CD471993179B0005CAEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2F1993179B0005CAEB /* UIKit.framework */; };
+		7B91CD4F1993179B0005CAEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B91CD4D1993179B0005CAEB /* InfoPlist.strings */; };
+		7B91CD511993179B0005CAEB /* FaceLapseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B91CD501993179B0005CAEB /* FaceLapseTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B91CD481993179B0005CAEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B91CD201993179B0005CAEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B91CD271993179B0005CAEB;
+			remoteInfo = FaceLapse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B91CD281993179B0005CAEB /* FaceLapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceLapse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B91CD2B1993179B0005CAEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B91CD2D1993179B0005CAEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7B91CD2F1993179B0005CAEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7B91CD331993179B0005CAEB /* FaceLapse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaceLapse-Info.plist"; sourceTree = "<group>"; };
+		7B91CD351993179B0005CAEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B91CD371993179B0005CAEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B91CD391993179B0005CAEB /* FaceLapse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceLapse-Prefix.pch"; sourceTree = "<group>"; };
+		7B91CD3A1993179B0005CAEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7B91CD3B1993179B0005CAEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7B91CD3D1993179B0005CAEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7B91CD431993179B0005CAEB /* FaceLapseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceLapseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B91CD441993179B0005CAEB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7B91CD4C1993179B0005CAEB /* FaceLapseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaceLapseTests-Info.plist"; sourceTree = "<group>"; };
+		7B91CD4E1993179B0005CAEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B91CD501993179B0005CAEB /* FaceLapseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceLapseTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B91CD251993179B0005CAEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B91CD2E1993179B0005CAEB /* CoreGraphics.framework in Frameworks */,
+				7B91CD301993179B0005CAEB /* UIKit.framework in Frameworks */,
+				7B91CD2C1993179B0005CAEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B91CD401993179B0005CAEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B91CD451993179B0005CAEB /* XCTest.framework in Frameworks */,
+				7B91CD471993179B0005CAEB /* UIKit.framework in Frameworks */,
+				7B91CD461993179B0005CAEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B91CD1F1993179B0005CAEB = {
+			isa = PBXGroup;
+			children = (
+				7B91CD311993179B0005CAEB /* FaceLapse */,
+				7B91CD4A1993179B0005CAEB /* FaceLapseTests */,
+				7B91CD2A1993179B0005CAEB /* Frameworks */,
+				7B91CD291993179B0005CAEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B91CD291993179B0005CAEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B91CD281993179B0005CAEB /* FaceLapse.app */,
+				7B91CD431993179B0005CAEB /* FaceLapseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B91CD2A1993179B0005CAEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B91CD2B1993179B0005CAEB /* Foundation.framework */,
+				7B91CD2D1993179B0005CAEB /* CoreGraphics.framework */,
+				7B91CD2F1993179B0005CAEB /* UIKit.framework */,
+				7B91CD441993179B0005CAEB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B91CD311993179B0005CAEB /* FaceLapse */ = {
+			isa = PBXGroup;
+			children = (
+				7B91CD3A1993179B0005CAEB /* AppDelegate.h */,
+				7B91CD3B1993179B0005CAEB /* AppDelegate.m */,
+				7B91CD3D1993179B0005CAEB /* Images.xcassets */,
+				7B91CD321993179B0005CAEB /* Supporting Files */,
+			);
+			path = FaceLapse;
+			sourceTree = "<group>";
+		};
+		7B91CD321993179B0005CAEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B91CD331993179B0005CAEB /* FaceLapse-Info.plist */,
+				7B91CD341993179B0005CAEB /* InfoPlist.strings */,
+				7B91CD371993179B0005CAEB /* main.m */,
+				7B91CD391993179B0005CAEB /* FaceLapse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B91CD4A1993179B0005CAEB /* FaceLapseTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B91CD501993179B0005CAEB /* FaceLapseTests.m */,
+				7B91CD4B1993179B0005CAEB /* Supporting Files */,
+			);
+			path = FaceLapseTests;
+			sourceTree = "<group>";
+		};
+		7B91CD4B1993179B0005CAEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B91CD4C1993179B0005CAEB /* FaceLapseTests-Info.plist */,
+				7B91CD4D1993179B0005CAEB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B91CD271993179B0005CAEB /* FaceLapse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B91CD541993179B0005CAEB /* Build configuration list for PBXNativeTarget "FaceLapse" */;
+			buildPhases = (
+				7B91CD241993179B0005CAEB /* Sources */,
+				7B91CD251993179B0005CAEB /* Frameworks */,
+				7B91CD261993179B0005CAEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceLapse;
+			productName = FaceLapse;
+			productReference = 7B91CD281993179B0005CAEB /* FaceLapse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B91CD421993179B0005CAEB /* FaceLapseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B91CD571993179B0005CAEB /* Build configuration list for PBXNativeTarget "FaceLapseTests" */;
+			buildPhases = (
+				7B91CD3F1993179B0005CAEB /* Sources */,
+				7B91CD401993179B0005CAEB /* Frameworks */,
+				7B91CD411993179B0005CAEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B91CD491993179B0005CAEB /* PBXTargetDependency */,
+			);
+			name = FaceLapseTests;
+			productName = FaceLapseTests;
+			productReference = 7B91CD431993179B0005CAEB /* FaceLapseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B91CD201993179B0005CAEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "George Wu";
+				TargetAttributes = {
+					7B91CD421993179B0005CAEB = {
+						TestTargetID = 7B91CD271993179B0005CAEB;
+					};
+				};
+			};
+			buildConfigurationList = 7B91CD231993179B0005CAEB /* Build configuration list for PBXProject "FaceLapse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B91CD1F1993179B0005CAEB;
+			productRefGroup = 7B91CD291993179B0005CAEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B91CD271993179B0005CAEB /* FaceLapse */,
+				7B91CD421993179B0005CAEB /* FaceLapseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B91CD261993179B0005CAEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B91CD361993179B0005CAEB /* InfoPlist.strings in Resources */,
+				7B91CD3E1993179B0005CAEB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B91CD411993179B0005CAEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B91CD4F1993179B0005CAEB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B91CD241993179B0005CAEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B91CD3C1993179B0005CAEB /* AppDelegate.m in Sources */,
+				7B91CD381993179B0005CAEB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B91CD3F1993179B0005CAEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B91CD511993179B0005CAEB /* FaceLapseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B91CD491993179B0005CAEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B91CD271993179B0005CAEB /* FaceLapse */;
+			targetProxy = 7B91CD481993179B0005CAEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B91CD341993179B0005CAEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B91CD351993179B0005CAEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7B91CD4D1993179B0005CAEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B91CD4E1993179B0005CAEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B91CD521993179B0005CAEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B91CD531993179B0005CAEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B91CD551993179B0005CAEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaceLapse/FaceLapse-Prefix.pch";
+				INFOPLIST_FILE = "FaceLapse/FaceLapse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7B91CD561993179B0005CAEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaceLapse/FaceLapse-Prefix.pch";
+				INFOPLIST_FILE = "FaceLapse/FaceLapse-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7B91CD581993179B0005CAEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FaceLapse.app/FaceLapse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaceLapse/FaceLapse-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FaceLapseTests/FaceLapseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7B91CD591993179B0005CAEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FaceLapse.app/FaceLapse";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaceLapse/FaceLapse-Prefix.pch";
+				INFOPLIST_FILE = "FaceLapseTests/FaceLapseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B91CD231993179B0005CAEB /* Build configuration list for PBXProject "FaceLapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B91CD521993179B0005CAEB /* Debug */,
+				7B91CD531993179B0005CAEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B91CD541993179B0005CAEB /* Build configuration list for PBXNativeTarget "FaceLapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B91CD551993179B0005CAEB /* Debug */,
+				7B91CD561993179B0005CAEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B91CD571993179B0005CAEB /* Build configuration list for PBXNativeTarget "FaceLapseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B91CD581993179B0005CAEB /* Debug */,
+				7B91CD591993179B0005CAEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B91CD201993179B0005CAEB /* Project object */;
+}
