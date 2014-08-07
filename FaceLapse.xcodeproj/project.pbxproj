@@ -202,7 +202,7 @@
 				ORGANIZATIONNAME = "George Wu";
 				TargetAttributes = {
 					7B91CD271993179B0005CAEB = {
-						DevelopmentTeam = 3HZ8GXD28Q;
+						DevelopmentTeam = 946Q6JA86M;
 					};
 					7B91CD421993179B0005CAEB = {
 						TestTargetID = 7B91CD271993179B0005CAEB;

@@ -52,4 +52,17 @@
 }
 */
 
+- (void)takePhoto:(id)sender
+{
+    
+}
+
+- (void)choosePhoto:(id)sender
+{
+    UIImagePickerController *photoLibraryController = [[UIImagePickerController alloc] init];
+    photoLibraryController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    [self presentViewController:photoLibraryController animated:YES completion:NULL];
+    
+}
+
 @end

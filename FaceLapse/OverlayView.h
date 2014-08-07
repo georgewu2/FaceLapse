@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol OverlayViewDelegate <NSObject>
+
+- (void)takePhoto:(id)sender;
+- (void)choosePhoto:(id)sender;
+
+@end
+
 @interface OverlayView : UIView
 
 @property (nonatomic, strong) UIImage *overlayImage;
+@property (nonatomic, weak) id<OverlayViewDelegate> delegate;
 
 @end

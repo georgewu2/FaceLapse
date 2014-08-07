@@ -21,11 +21,11 @@
     if (self) {
         // Initialization code
         _photoLibraryButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        
+        [_photoLibraryButton addTarget:self.delegate action:@selector(choosePhoto:) forControlEvents:UIControlEventTouchDown];
         [self addSubview:_photoLibraryButton];
         
         _takePhotoButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_takePhotoButton addTarget:self action:@selector(_takePhoto:) forControlEvents:UIControlEventTouchDown];
+        [_takePhotoButton addTarget:self.delegate action:@selector(takePhoto:) forControlEvents:UIControlEventTouchDown];
         [self addSubview:_takePhotoButton];
         
         UIImage *image = [self _getFirstImageInPhotoLibrary];
@@ -49,9 +49,5 @@
     return nil;
 }
 
-- (void)_takePhoto:(id)sender
-{
-    
-}
 
 @end
