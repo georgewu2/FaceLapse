@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (nonatomic) NSString *deleteLaterJustTesting;
+@property (nonatomic) NSString *deleteLaterJustTesting2222;
 
 @end
