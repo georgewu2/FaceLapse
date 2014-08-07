@@ -19,6 +19,7 @@
 		7B91CD471993179B0005CAEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2F1993179B0005CAEB /* UIKit.framework */; };
 		7B91CD4F1993179B0005CAEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B91CD4D1993179B0005CAEB /* InfoPlist.strings */; };
 		7B91CD511993179B0005CAEB /* FaceLapseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B91CD501993179B0005CAEB /* FaceLapseTests.m */; };
+		7B91CD5C199318C00005CAEB /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B91CD5B199318C00005CAEB /* CameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		7B91CD4C1993179B0005CAEB /* FaceLapseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaceLapseTests-Info.plist"; sourceTree = "<group>"; };
 		7B91CD4E1993179B0005CAEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B91CD501993179B0005CAEB /* FaceLapseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceLapseTests.m; sourceTree = "<group>"; };
+		7B91CD5A199318C00005CAEB /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		7B91CD5B199318C00005CAEB /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				7B91CD3A1993179B0005CAEB /* AppDelegate.h */,
 				7B91CD3B1993179B0005CAEB /* AppDelegate.m */,
+				7B91CD5A199318C00005CAEB /* CameraViewController.h */,
+				7B91CD5B199318C00005CAEB /* CameraViewController.m */,
 				7B91CD3D1993179B0005CAEB /* Images.xcassets */,
 				7B91CD321993179B0005CAEB /* Supporting Files */,
 			);
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B91CD5C199318C00005CAEB /* CameraViewController.m in Sources */,
 				7B91CD3C1993179B0005CAEB /* AppDelegate.m in Sources */,
 				7B91CD381993179B0005CAEB /* main.m in Sources */,
 			);
