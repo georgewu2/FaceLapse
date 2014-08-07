@@ -27,6 +27,35 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    OverlayView* overlay = [[OverlayView alloc] initWithFrame:camera.view.frame];
+    overlay.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"yourimagename.png"]];
+    [overlay.layer setOpaque:NO];
+    overlay.opaque = NO;
+    
+    camera.showsCameraControls = NO;
+    camera.cameraOverlayView = overlayView;
+    
+    if((UIButton *) sender == choosePhotoBtn)
+    {
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+        {
+            [picker setSourceType:UIImagePickerControllerSourceTypeCamera];
+        } else {
+            //do something if the device has no camera or if the camera is disabled in settings (it cannot be assumed that the camera is available/not broken)
+        }
+    } else {
+        
+    }
+    
+    label1.text =@"PHOTO ACTION";
+    
+    [self presentModalViewController:picker animated:YES];
+}
+
+- (void) getPhoto:(id)sender
+{
+    
 }
 
 - (void)didReceiveMemoryWarning
