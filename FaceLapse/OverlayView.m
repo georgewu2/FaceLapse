@@ -22,6 +22,7 @@
         // Initialization code
         _photoLibraryButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_photoLibraryButton addTarget:self.delegate action:@selector(choosePhoto:) forControlEvents:UIControlEventTouchDown];
+        [_photoLibraryButton setImage:[UIImage imageNamed:@"arrow.png"] forState:UIControlStateNormal];
         [self addSubview:_photoLibraryButton];
         
         _takePhotoButton = [UIButton buttonWithType:UIButtonTypeCustom];

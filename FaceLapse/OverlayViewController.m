@@ -29,6 +29,7 @@
 - (void)loadView
 {
     OverlayView *overlayView = [[OverlayView alloc] initWithFrame:CGRectZero];
+    overlayView.delegate = self;
     self.view = overlayView;
 }
 
