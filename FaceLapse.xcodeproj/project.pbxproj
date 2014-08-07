@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		591E7179199325340023560D /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 591E7178199325340023560D /* OverlayView.m */; };
 		7B4968D11993231500F14183 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4968D01993231500F14183 /* OverlayViewController.m */; };
 		7B91CD2C1993179B0005CAEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2B1993179B0005CAEB /* Foundation.framework */; };
 		7B91CD2E1993179B0005CAEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2D1993179B0005CAEB /* CoreGraphics.framework */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		591E7177199325340023560D /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		591E7178199325340023560D /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		7B4968CF1993231500F14183 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
 		7B4968D01993231500F14183 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
 		7B91CD281993179B0005CAEB /* FaceLapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceLapse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +117,8 @@
 				7B91CD3B1993179B0005CAEB /* AppDelegate.m */,
 				7B4968CF1993231500F14183 /* OverlayViewController.h */,
 				7B4968D01993231500F14183 /* OverlayViewController.m */,
+				591E7177199325340023560D /* OverlayView.h */,
+				591E7178199325340023560D /* OverlayView.m */,
 				7B91CD3D1993179B0005CAEB /* Images.xcassets */,
 				7B91CD321993179B0005CAEB /* Supporting Files */,
 			);
@@ -248,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B91CD3C1993179B0005CAEB /* AppDelegate.m in Sources */,
+				591E7179199325340023560D /* OverlayView.m in Sources */,
 				7B4968D11993231500F14183 /* OverlayViewController.m in Sources */,
 				7B91CD381993179B0005CAEB /* main.m in Sources */,
 			);

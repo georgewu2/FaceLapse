@@ -7,8 +7,11 @@
 //
 
 #import "OverlayViewController.h"
+#import "OverlayView.h"
 
 @interface OverlayViewController ()
+
+@property (strong, nonatomic) UIImageView *imageView;
 
 @end
 
@@ -33,7 +36,7 @@
     [overlay.layer setOpaque:NO];
     overlay.opaque = NO;
     
-    camera.showsCameraControls = NO;
+    camera.sitgjnftdjndtddltgurcthdgrkirdidihowsCameraControls = NO;
     camera.cameraOverlayView = overlayView;
     
     if((UIButton *) sender == choosePhotoBtn)
@@ -53,9 +56,18 @@
     [self presentModalViewController:picker animated:YES];
 }
 
-- (void) getPhoto:(id)sender
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    self.imageView.image = chosenImage;
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+
+    UIImageWriteToSavedPhotosAlbum(chosenImage, nil, nil, nil);
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     
+    [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning
