@@ -26,6 +26,11 @@
     return self;
 }
 
+- (void)loadView
+{
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,7 +41,7 @@
     [overlay.layer setOpaque:NO];
     overlay.opaque = NO;
     
-    camera.sitgjnftdjndtddltgurcthdgrkirdidihowsCameraControls = NO;
+    camera.CameraControls = NO;
     camera.cameraOverlayView = overlayView;
     
     if((UIButton *) sender == choosePhotoBtn)
