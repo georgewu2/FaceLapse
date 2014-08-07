@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "CameraViewController.h"
+#import "OverlayViewController.h"
 
 @implementation AppDelegate
 
@@ -19,8 +19,10 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    CameraViewController *viewController = [[CameraViewController alloc] initWithNibName:nil bundle:nil];
-    self.window.rootViewController = viewController;
+    UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
+    pickerController.allowsEditing = YES;
+    pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+    self.window.rootViewController = pickerController;
     
     return YES;
 }

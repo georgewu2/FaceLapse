@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B4968D11993231500F14183 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4968D01993231500F14183 /* OverlayViewController.m */; };
 		7B91CD2C1993179B0005CAEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2B1993179B0005CAEB /* Foundation.framework */; };
 		7B91CD2E1993179B0005CAEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2D1993179B0005CAEB /* CoreGraphics.framework */; };
 		7B91CD301993179B0005CAEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2F1993179B0005CAEB /* UIKit.framework */; };
@@ -19,7 +20,6 @@
 		7B91CD471993179B0005CAEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B91CD2F1993179B0005CAEB /* UIKit.framework */; };
 		7B91CD4F1993179B0005CAEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B91CD4D1993179B0005CAEB /* InfoPlist.strings */; };
 		7B91CD511993179B0005CAEB /* FaceLapseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B91CD501993179B0005CAEB /* FaceLapseTests.m */; };
-		7B91CD5C199318C00005CAEB /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B91CD5B199318C00005CAEB /* CameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B4968CF1993231500F14183 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
+		7B4968D01993231500F14183 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
 		7B91CD281993179B0005CAEB /* FaceLapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceLapse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B91CD2B1993179B0005CAEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B91CD2D1993179B0005CAEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,8 +51,6 @@
 		7B91CD4C1993179B0005CAEB /* FaceLapseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaceLapseTests-Info.plist"; sourceTree = "<group>"; };
 		7B91CD4E1993179B0005CAEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7B91CD501993179B0005CAEB /* FaceLapseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceLapseTests.m; sourceTree = "<group>"; };
-		7B91CD5A199318C00005CAEB /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
-		7B91CD5B199318C00005CAEB /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +112,8 @@
 			children = (
 				7B91CD3A1993179B0005CAEB /* AppDelegate.h */,
 				7B91CD3B1993179B0005CAEB /* AppDelegate.m */,
-				7B91CD5A199318C00005CAEB /* CameraViewController.h */,
-				7B91CD5B199318C00005CAEB /* CameraViewController.m */,
+				7B4968CF1993231500F14183 /* OverlayViewController.h */,
+				7B4968D01993231500F14183 /* OverlayViewController.m */,
 				7B91CD3D1993179B0005CAEB /* Images.xcassets */,
 				7B91CD321993179B0005CAEB /* Supporting Files */,
 			);
@@ -196,6 +196,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "George Wu";
 				TargetAttributes = {
+					7B91CD271993179B0005CAEB = {
+						DevelopmentTeam = 3HZ8GXD28Q;
+					};
 					7B91CD421993179B0005CAEB = {
 						TestTargetID = 7B91CD271993179B0005CAEB;
 					};
@@ -244,8 +247,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B91CD5C199318C00005CAEB /* CameraViewController.m in Sources */,
 				7B91CD3C1993179B0005CAEB /* AppDelegate.m in Sources */,
+				7B4968D11993231500F14183 /* OverlayViewController.m in Sources */,
 				7B91CD381993179B0005CAEB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,10 +368,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaceLapse/FaceLapse-Prefix.pch";
 				INFOPLIST_FILE = "FaceLapse/FaceLapse-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -378,10 +384,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FaceLapse/FaceLapse-Prefix.pch";
 				INFOPLIST_FILE = "FaceLapse/FaceLapse-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -445,6 +454,7 @@
 				7B91CD561993179B0005CAEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B91CD571993179B0005CAEB /* Build configuration list for PBXNativeTarget "FaceLapseTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +463,7 @@
 				7B91CD591993179B0005CAEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

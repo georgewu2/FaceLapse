@@ -1,5 +1,5 @@
 //
-//  CameraViewController.h
+//  OverlayViewController.h
 //  FaceLapse
 //
 //  Created by George Wu on 8/6/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CameraViewController : UIViewController
+@interface OverlayViewController : UIViewController
 
 @end

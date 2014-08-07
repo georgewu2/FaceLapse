@@ -1,18 +1,18 @@
 //
-//  CameraViewController.m
+//  OverlayViewController.m
 //  FaceLapse
 //
 //  Created by George Wu on 8/6/14.
 //  Copyright (c) 2014 George Wu. All rights reserved.
 //
 
-#import "CameraViewController.h"
+#import "OverlayViewController.h"
 
-@interface CameraViewController ()
+@interface OverlayViewController ()
 
 @end
 
-@implementation CameraViewController
+@implementation OverlayViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
