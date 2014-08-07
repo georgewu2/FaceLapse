@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "CameraViewController.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,6 +18,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    CameraViewController *viewController = [[CameraViewController alloc] initWithNibName:nil bundle:nil];
+    self.window.rootViewController = viewController;
+    
     return YES;
 }
 
