@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OverlayViewController : UIViewController
+@interface OverlayViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @end

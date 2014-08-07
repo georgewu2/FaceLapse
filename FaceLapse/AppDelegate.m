@@ -11,6 +11,10 @@
 #import "OverlayViewController.h"
 
 @implementation AppDelegate
+{
+    UIImagePickerController *_pickerController;
+    OverlayViewController *_overlayController;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -19,10 +23,13 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
-    pickerController.allowsEditing = YES;
-    pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-    self.window.rootViewController = pickerController;
+    _pickerController = [[UIImagePickerController alloc] init];
+    _pickerController.allowsEditing = YES;
+    _pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+    _overlayController = [[OverlayViewController alloc] initWithNibName:nil bundle:nil];
+    _pickerController.cameraOverlayView = _overlayController.view;
+    _pickerController.delegate = _overlayController;
+    self.window.rootViewController = _pickerController;
     
     return YES;
 }
